@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Django Mail Demo</title>
+</head>
+
+<body>
+<h1>this is a home page</h1>
+<form action="send_gmail" method="POST">
+    {%csrf_token%}
+    <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" placeholder="put your name">
+    </div>
+    <div>
+        <label for="sbj">Subjenct:</label>
+        <input id="sbj" name= "subject" type="text" placeholder="put your Subject">
+    </div>
+    <div>
+        <label for="msg">Message:</label>
+        <input id="msg" name = "message" type="text" placeholder="put your Message">
+    </div>
+    <input type="submit",value="Send mail">  
+
+</form>
+
+</body>
+
+</html>

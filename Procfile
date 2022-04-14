@@ -1,0 +1,1 @@
+web: genicorn gadgets.wsgi
